@@ -24,9 +24,13 @@ dd if=chr.img bs=1024 of=/dev/vda && \
 echo "sync disk" && \
 echo s > /proc/sysrq-trigger && \
 
-# خواب 5 ثانیه‌ای
+# استفاده از bash به جای sleep برای تأخیر
 echo "Sleep 5 seconds"
-sleep 5 && \
+for i in {1..5}; do
+    echo -n "."
+    sleep 1
+done
+echo ""
 
 # ریبوت سیستم
 echo "Ok, reboot"
