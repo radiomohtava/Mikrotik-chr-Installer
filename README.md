@@ -1,4 +1,4 @@
-Install Microtik
+Install Mikrotik
 
 # Install
 ```bash
