@@ -4,7 +4,7 @@ chmod +x /path/to/mikrotik.sh  # دستور برای دادن دسترسی اج�
 command -v sleep >/dev/null 2>&1 || { echo "sleep command not found"; exit 1; }
 
 # دانلود و استخراج فایل MikroTik RouterOS
-wget https://download.mikrotik.com/routeros/7.16.2/chr-7.16.2.img.zip -O chr.img.zip  && \
+wget https://download.mikrotik.com/routeros/6.49.18/chr-6.49.18.img.zip -O chr.img.zip  && \
 gunzip -c chr.img.zip > chr.img  && \
 mount -o loop,offset=512 chr.img /mnt && \
 
